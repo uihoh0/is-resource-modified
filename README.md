@@ -12,7 +12,7 @@
 ### import or require
 ```js
     import isResourceModified,{autoCheck} from 'is-resource-modified'
-
+ 
     // if your are using in client-side(browser)
     // import isResourceModified,{autoCheck} from 'is-resource-modified/dist/lib/is-resource-modified-browser'
 ```
