@@ -10,8 +10,6 @@ const isResourceModified = async (url: string, opt: IfOptions = {}) => {
   if (oldHeaders) {
     const oldEtag = oldHeaders.get('etag')
     const etag = headers.get('etag')
-    // console.log('oldEtag:', oldEtag)
-    // console.log('etag::', etag)
     const isSame = oldEtag && etag && (oldEtag === etag)
     isModified = !isSame
     if (isModified && opt.onModified) {

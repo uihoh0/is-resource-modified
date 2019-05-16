@@ -3,6 +3,7 @@ export interface IfOptions {
 }
 
 
+
 export interface IfAutoOptions{
     loopInterval?: number
     onModified?: (url: string, headers: any) => {}
