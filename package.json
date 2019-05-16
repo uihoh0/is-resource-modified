@@ -1,6 +1,6 @@
 {
   "name": "is-resource-modified",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [],
   "main": "dist/is-resource-modified.umd.js",
