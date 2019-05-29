@@ -21,6 +21,7 @@ const isResourceModified = async (url: string, opt: IfOptions = {}) => {
 }
 const autoCheck = (url: string, opt: IfAutoOptions = {}): Looper => {
   const loopInterval = opt.loopInterval || 1000 * 60 * 10 // check every 10minutes as default
+  isResourceModified(url, opt) // get an init cache 
   const looper = new Looper(() => {
     isResourceModified(url, opt)
   }, loopInterval)
